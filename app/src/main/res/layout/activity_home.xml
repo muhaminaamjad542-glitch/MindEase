@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/background">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:fillViewport="true">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="20dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="16dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:id="@+id/tvGreeting" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="Good morning, User 👋"
+                        android:textColor="@color/textDark" android:textSize="20sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="How are you feeling today?" android:textColor="@color/textGray"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🧠" android:textSize="36sp" android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_light" android:padding="16dp"
+                android:orientation="horizontal" android:layout_marginBottom="20dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:id="@+id/tvStreakLabel" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="🔥 Current Streak"
+                        android:textColor="@color/primary" android:textSize="13sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvStreakCount" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="0 🔥"
+                        android:textColor="@color/textDark" android:textSize="28sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="days in a row" android:textColor="@color/textGray" android:textSize="12sp"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🏆" android:textSize="48sp" android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_outline" android:padding="16dp"
+                android:orientation="vertical" android:layout_marginBottom="24dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="💬 Daily Quote" android:textColor="@color/primary" android:textSize="12sp"
+                    android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                <TextView android:id="@+id/tvQuote" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="Loading..."
+                    android:textColor="@color/textDark" android:textSize="14sp"
+                    android:lineSpacingMultiplier="1.4" android:fontStyle="italic"
+                    android:layout_marginBottom="6dp"/>
+                <TextView android:id="@+id/tvQuoteAuthor" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text=""
+                    android:textColor="@color/textGray" android:textSize="12sp"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Quick Access" android:textColor="@color/textDark" android:textSize="16sp"
+                android:textStyle="bold" android:layout_marginBottom="12dp"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="12dp">
+                <LinearLayout android:id="@+id/cardMood" android:layout_width="0dp"
+                    android:layout_height="100dp" android:layout_weight="1" android:layout_marginEnd="6dp"
+                    android:background="@drawable/bg_card_light" android:orientation="vertical"
+                    android:gravity="center" android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="😊" android:textSize="32sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Mood" android:textColor="@color/primary" android:textSize="13sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardChat" android:layout_width="0dp"
+                    android:layout_height="100dp" android:layout_weight="1" android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_card_outline" android:orientation="vertical"
+                    android:gravity="center" android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="💬" android:textSize="32sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Chat" android:textColor="@color/textDark" android:textSize="13sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+                <LinearLayout android:id="@+id/cardJournal" android:layout_width="0dp"
+                    android:layout_height="100dp" android:layout_weight="1" android:layout_marginEnd="6dp"
+                    android:background="@drawable/bg_card_outline" android:orientation="vertical"
+                    android:gravity="center" android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="📔" android:textSize="32sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Journal" android:textColor="@color/textDark" android:textSize="13sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardCalendar" android:layout_width="0dp"
+                    android:layout_height="100dp" android:layout_weight="1" android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_card_outline" android:orientation="vertical"
+                    android:gravity="center" android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="📅" android:textSize="32sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Calendar" android:textColor="@color/textDark" android:textSize="13sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="12dp">
+                <LinearLayout android:id="@+id/cardGames" android:layout_width="0dp"
+                    android:layout_height="100dp" android:layout_weight="1" android:layout_marginEnd="6dp"
+                    android:background="@drawable/bg_card_outline" android:orientation="vertical"
+                    android:gravity="center" android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🎮" android:textSize="32sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Games" android:textColor="@color/textDark" android:textSize="13sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardBreathing" android:layout_width="0dp"
+                    android:layout_height="100dp" android:layout_weight="1" android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_card_outline" android:orientation="vertical"
+                    android:gravity="center" android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🌬️" android:textSize="32sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Breathing" android:textColor="@color/textDark" android:textSize="13sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="12dp">
+                <LinearLayout android:id="@+id/cardQuotes" android:layout_width="0dp"
+                    android:layout_height="100dp" android:layout_weight="1" android:layout_marginEnd="6dp"
+                    android:background="@drawable/bg_card_outline" android:orientation="vertical"
+                    android:gravity="center" android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="✨" android:textSize="32sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Quotes" android:textColor="@color/textDark" android:textSize="13sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/cardEmergency" android:layout_width="0dp"
+                    android:layout_height="100dp" android:layout_weight="1" android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_card_outline" android:orientation="vertical"
+                    android:gravity="center" android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🆘" android:textSize="32sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Emergency" android:textColor="@color/danger" android:textSize="13sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:menu="@menu/bottom_nav_menu"
+        xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+</LinearLayout>

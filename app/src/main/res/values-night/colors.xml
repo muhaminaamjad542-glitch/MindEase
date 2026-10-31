@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#38B2AC</color>
+    <color name="primaryDark">#2C7A7B</color>
+    <color name="primaryLight">#1D2D35</color>
+    <color name="accent">#F6AD55</color>
+    <color name="danger">#E53E3E</color>
+    <color name="white">#1A202C</color>
+    <color name="background">#121824</color>
+    <color name="textDark">#EDF2F7</color>
+    <color name="textGray">#A0AEC0</color>
+    <color name="grayLight">#2D3748</color>
+    <color name="cardPurple">#2B243C</color>
+    <color name="cardBlue">#202A36</color>
+    <color name="cardOrange">#322A20</color>
+    <color name="cardRed">#342020</color>
+    <color name="cardYellow">#323020</color>
+    <color name="orange">#ED8936</color>
+    <color name="black">#FFFFFF</color>
+</resources>

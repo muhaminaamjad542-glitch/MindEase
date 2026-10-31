@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/background">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:padding="20dp" android:gravity="center_vertical">
+        <ImageButton android:id="@+id/btnBack" android:layout_width="40dp" android:layout_height="40dp"
+            android:background="@drawable/circle_gray" android:src="@android:drawable/ic_media_previous"
+            android:contentDescription="Back"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Mood Calendar"
+            android:textColor="@color/textDark" android:textSize="18sp"
+            android:textStyle="bold" android:layout_marginStart="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center" android:paddingHorizontal="16dp"
+        android:layout_marginBottom="12dp">
+        <ImageButton android:id="@+id/btnPrevMonth" android:layout_width="40dp" android:layout_height="40dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_media_previous" android:contentDescription="Previous Month"
+            android:tint="@color/primary"/>
+        <TextView android:id="@+id/tvMonthTitle" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="June 2026" android:textSize="18sp"
+            android:textStyle="bold" android:textColor="@color/textDark" android:gravity="center"/>
+        <ImageButton android:id="@+id/btnNextMonth" android:layout_width="40dp" android:layout_height="40dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_media_next" android:contentDescription="Next Month"
+            android:tint="@color/primary"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:paddingHorizontal="12dp" android:layout_marginBottom="8dp">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Su" android:gravity="center" android:textColor="@color/textGray" android:textStyle="bold" android:textSize="12sp"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Mo" android:gravity="center" android:textColor="@color/textGray" android:textStyle="bold" android:textSize="12sp"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Tu" android:gravity="center" android:textColor="@color/textGray" android:textStyle="bold" android:textSize="12sp"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="We" android:gravity="center" android:textColor="@color/textGray" android:textStyle="bold" android:textSize="12sp"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Th" android:gravity="center" android:textColor="@color/textGray" android:textStyle="bold" android:textSize="12sp"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Fr" android:gravity="center" android:textColor="@color/textGray" android:textStyle="bold" android:textSize="12sp"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Sa" android:gravity="center" android:textColor="@color/textGray" android:textStyle="bold" android:textSize="12sp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCalendarGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12dp"
+        android:layout_marginBottom="16dp"
+        android:overScrollMode="never" />
+
+    <TextView android:id="@+id/tvDayMood" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="Tap a day to see your mood"
+        android:textColor="@color/primary" android:textSize="14sp" android:textStyle="bold"
+        android:padding="16dp"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_outline" android:layout_margin="16dp"
+        android:orientation="vertical" android:padding="16dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Monthly Summary" android:textColor="@color/textDark"
+            android:textSize="14sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+        <TextView android:id="@+id/tvSummaryGreat" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="😄 Great: 0" android:textColor="@color/textDark" android:textSize="13sp"/>
+        <TextView android:id="@+id/tvSummaryGood" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="🙂 Good: 0" android:textColor="@color/textDark" android:textSize="13sp"/>
+        <TextView android:id="@+id/tvSummaryOkay" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="😐 Okay: 0" android:textColor="@color/textDark" android:textSize="13sp"/>
+        <TextView android:id="@+id/tvSummarySad" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="😔 Sad: 0" android:textColor="@color/textDark" android:textSize="13sp"/>
+        <TextView android:id="@+id/tvSummaryAwful" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="😭 Awful: 0" android:textColor="@color/textDark" android:textSize="13sp"/>
+    </LinearLayout>
+</LinearLayout>

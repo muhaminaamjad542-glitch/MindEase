@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="start"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="6dp">
+
+    <TextView
+        android:id="@+id/tvChatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="280dp"
+        android:background="@drawable/bg_input_field"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:textColor="@color/textDark"
+        android:textSize="15sp"
+        android:elevation="1dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutSuggestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnSuggestBreathing"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_button_primary"
+            android:backgroundTint="@color/primary"
+            android:text="🌬 Breathing"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textAllCaps="false"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="0dp"
+            android:layout_marginEnd="6dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/btnSuggestBubblePop"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_button_primary"
+            android:backgroundTint="@color/primary"
+            android:text="🫧 Bubble Pop"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textAllCaps="false"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="0dp"
+            android:layout_marginEnd="6dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/btnSuggestStarCatcher"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_button_primary"
+            android:backgroundTint="@color/primary"
+            android:text="⭐ Star Catcher"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textAllCaps="false"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="0dp"
+            android:layout_marginEnd="6dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/btnSuggestColorSort"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_button_primary"
+            android:backgroundTint="@color/primary"
+            android:text="🧩 Color Sort"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textAllCaps="false"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:stateListAnimator="@null"/>
+    </LinearLayout>
+</LinearLayout>

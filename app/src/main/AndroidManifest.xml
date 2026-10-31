@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+
+    <application
+        android:name=".MindEaseApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MindEase"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OnboardingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".QuestionnaireActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SignupActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".PinLockActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".PinSetupActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".HomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MoodTrackingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".MoodSavedActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MoodCalendarActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MoodNoteEntryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".MoodStreakActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".QuoteActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".EditProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".JournalActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".NewJournalActivity" android:screenOrientation="portrait"/>
+
+        <!-- Newly Integrated Activities -->
+        <activity android:name=".ForgotPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".OtpActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ResetPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".NotificationPermissionActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".GamesActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".BubblePopGameActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ColorSortGameActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ZenDoodleActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".StarCatcherActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".BreathingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".RemindersActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".EmergencyActivity" android:screenOrientation="portrait"/>
+
+        <!-- Services & Receivers -->
+        <service
+            android:name=".FCMService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".ReminderReceiver"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔒"
+        android:textSize="64sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Up PIN"
+        android:textColor="@color/primary"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a 4-digit PIN for security"
+        android:textColor="@color/textGray"
+        android:textSize="14sp"
+        android:layout_marginBottom="40dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="48dp">
+        <ImageView android:id="@+id/dot1" android:layout_width="14dp" android:layout_height="14dp"
+            android:layout_margin="12dp" android:src="@drawable/circle_gray"/>
+        <ImageView android:id="@+id/dot2" android:layout_width="14dp" android:layout_height="14dp"
+            android:layout_margin="12dp" android:src="@drawable/circle_gray"/>
+        <ImageView android:id="@+id/dot3" android:layout_width="14dp" android:layout_height="14dp"
+            android:layout_margin="12dp" android:src="@drawable/circle_gray"/>
+        <ImageView android:id="@+id/dot4" android:layout_width="14dp" android:layout_height="14dp"
+            android:layout_margin="12dp" android:src="@drawable/circle_gray"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow android:gravity="center">
+            <com.google.android.material.button.MaterialButton android:id="@+id/btn1" style="@style/PinButton" android:text="1"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btn2" style="@style/PinButton" android:text="2"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btn3" style="@style/PinButton" android:text="3"/>
+        </TableRow>
+
+        <TableRow android:gravity="center">
+            <com.google.android.material.button.MaterialButton android:id="@+id/btn4" style="@style/PinButton" android:text="4"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btn5" style="@style/PinButton" android:text="5"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btn6" style="@style/PinButton" android:text="6"/>
+        </TableRow>
+
+        <TableRow android:gravity="center">
+            <com.google.android.material.button.MaterialButton android:id="@+id/btn7" style="@style/PinButton" android:text="7"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btn8" style="@style/PinButton" android:text="8"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btn9" style="@style/PinButton" android:text="9"/>
+        </TableRow>
+
+        <TableRow android:gravity="center">
+            <View android:layout_width="64dp" android:layout_height="64dp" android:layout_margin="8dp"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btn0" style="@style/PinButton" android:text="0"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBackspace"
+                style="@style/PinButton"
+                android:text="⌫"/>
+        </TableRow>
+    </TableLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCancel"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="@color/textGray"
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>

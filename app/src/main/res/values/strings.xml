@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MindEase</string>
+    <string name="default_web_client_id">739768134267-otisuh20h210jjbqcafrua012o1dnphu.apps.googleusercontent.com</string>
+    <string name="profile_avatar_emoji">👤</string>
+    <string name="profile_edit_profile">✏️  Edit Profile</string>
+    <string name="profile_reminders">🔔  Reminders Preferences</string>
+    <string name="profile_streak">🔥  Wellness Streak Details</string>
+    <string name="profile_journal">📔  My Journal Logbook</string>
+    <string name="profile_settings">⚙️  Application Settings</string>
+    <string name="profile_sign_out">🚪  Sign Out of MindEase</string>
+</resources>

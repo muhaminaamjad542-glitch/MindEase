@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#2E9E8F</color>
+    <color name="primaryDark">#1C7366</color>
+    <color name="primaryLight">#D9F5F0</color>
+    <color name="accent">#FCBA4A</color>
+    <color name="danger">#ED4545</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background">#F7FAFF</color>
+    <color name="textDark">#1F242E</color>
+    <color name="textGray">#4A5568</color>
+    <color name="grayLight">#EDF0F5</color>
+    <color name="cardPurple">#E8DEFF</color>
+    <color name="cardBlue">#E0F2FF</color>
+    <color name="cardOrange">#FFF0D6</color>
+    <color name="cardRed">#FFE0E0</color>
+    <color name="cardYellow">#FFF7D9</color>
+    <color name="orange">#FF8C38</color>
+    <color name="black">#000000</color>
+    <!-- Mood Colors -->
+    <color name="mood_happy">#FFC72C</color>
+    <color name="mood_neutral">#CBD5E0</color>
+    <color name="mood_sad">#4299E1</color>
+    <color name="mood_anger">#E53E3E</color>
+    <color name="mood_anxiety">#ED8936</color>
+    <color name="mood_panic">#9B2C2C</color>
+    <color name="mood_depression">#4A5568</color>
+</resources>
